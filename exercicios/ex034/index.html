@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        h1#titulo {
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        h1, h2, p, a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main {
+            margin: auto;
+            padding: 20px;
+            background-color: brown;
+            max-width: 900px;
+            min-width: 290px;
+            border-radius: 10px;
+        }
+
+        .video, .audio, .dowload, .lista {
+            background-color: black;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        video, audio {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 225px;
+        }
+
+        ul, li {
+            text-align: center;
+            list-style-position: inside;
+            list-style-type: '\1F52B\00A0\00A0';
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        a:active {
+            content: "";
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: black;">Demais testes</h1>
+
+    <div class="main">
+        <div class="video">
+
+            <h1 id="titulo">Vídeos</h1>
+
+            <video controls preload="metadata" poster="midia/league-of-legendsot.jpg">
+                <source src="midia/Videomp4.mkv" type="video/mp4">
+                <source src="midia/Videomp4.mp4" type="video/mp4">
+                <source src="midia/Videomp4.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="audio">
+
+            <h1 id="titulo">Audío</h1>
+
+            <audio controls preload="metadata">
+                <source src="midia/Mission - Anno Domini Beats.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="dowload">
+
+            <h1 id="titulo">Dowloads</h1>
+
+            <p><a href="midia/Livros-grátis.pdf" download="midia/Livros-grátis.pdf" type="application/pdf" target="_blank" rel="external">Baixar Livro em PDF</a></p>
+            <p><a href="midia/Livros-grátis.rar" download="midia/Livros-grátis.rar" type="application/rar">Barixar Livro em RAR</a></p>
+        </div>
+
+        <div class="lista">
+
+            <h1 id="titulo">Melhores Adcary</h1>
+
+            <ul>
+                <li>Caitlyn</li>
+                <li>Ashe</li>
+                <li>Kai'sa</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

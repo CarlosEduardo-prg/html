@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Oswald' ;
+    src: url('fontes/Oswald-Bold.ttf');
+}
+
+:root {
+    --cor0: #4B72A6;
+    --cor1: #3B668C;
+    --cor2: #84B1D9;
+    --cor3: #A68358;
+    --cor4: #F2E3D5;
+
+    --font-destaque: "Oswald", sans-serif;
+    --font-padrao: "Rubik", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik";
+}
+
+header {
+    background-image: url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000058686/c75069c85ea482762ff0fa3a7a0003137d5bd4b6a31c59ee761be287c4f8958d');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;    
+}
+
+h2 {
+    padding: 20px 5px 20px 5px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+.bloco1 {
+    margin: auto;
+    margin-top: 38.4px;
+    margin-bottom: 76.8px;
+    display: flex;
+    flex-grow: 3;  
+    flex-basis: 600px;
+}
+
+.s1 {
+    width: 50%;
+    padding: 70px;
+    text-align: justify;
+    font: normal lighter 1.4em "Rubik";
+}
+
+.imcap {
+    font-weight: bolder;
+    text-align: justify;
+    padding: 20px;
+    min-height: 390px;
+}
+
+.bloco2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#im1 {
+    background-image: url('https://ardos.com.br/wp-content/uploads/2022/09/shutterstock_2014643336-1536x1024.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+section#im1 > h2 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+#im2 {
+    background-image: url('https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w730/f_auto/primary/trhfh3vztjigaqbmtq5e');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+
+section#im2 > h2 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.bloco3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#im3 {
+    background-image: url('https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w730/f_auto/v1694791664/primary/qmhu0zwouyp4n6stp7us');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+section#im3 > h2 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+#im4 {
+    background-image: url('https://sme.goiania.go.gov.br/conexaoescola/wp-content/uploads/2020/12/catarinense-skate_0-scaled-e1607536723669-1536x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+section#im4 > h2 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.bloco4 {
+    width: 50%;
+    margin: auto;
+    margin-top: 90px;
+    padding: 20px;
+    display: flex;
+    text-align: justify;
+    font: normal lighter 1.4em "Rubik";
+}
+
+section.s4 > h2 {
+    text-align: center;
+    
+}
+
+.bloco5 {
+    width: 50%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.borda1 {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+section.borda1 a > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+section.borda1 a > p {
+    margin: 10px
+}
+
+section.borda1 a {
+    text-decoration: none;
+    color: black;
+}
+
+section.borda1:hover {
+    border: 1px solid black;
+    color: black;
+    font-weight: bolder;
+}
+
+.bloco6 {
+    width: 50%;
+    margin-bottom: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font: normal lighter 1.4em "Rubik";
+}
+
+.bloco6 h2 {
+    text-align: center;
+}
+
+.ping {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    min-height: 300px;
+    margin-top: 300px;
+}
+
+footer > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+footer > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

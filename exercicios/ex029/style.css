@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Oswald' ;
+    src: url('fontes/Oswald-Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #4F1222;
+    --cor1: #8D534F;
+    --cor2: #270810;
+    --cor3: #D4A9B3;
+    --cor4: #5F4A2F;
+
+    --font-destaque: 'Oswald', sans-serif;
+    --font-padrão: "Montserrat";
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: var(--font-destaque);
+    text-align: center;
+}
+
+header {
+    background-color: var(--cor4);
+    color: white;
+    min-height: 300px;
+    padding-top: 40px;
+}
+
+main {
+    min-width: 290px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+h2 {
+    text-align: left;
+    padding: 15px;
+}
+
+div.video {
+    background-color: var(--cor0);
+    padding-bottom: 50%;
+    position: relative;   
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+img.imagen {
+    width: 100%;
+}
+
+div.d1 {
+    background-color: white;
+    padding: 20px;
+}
+
+
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro</title>
+    <style>
+        @font-face {
+            font-family: "Oswald";
+            src: url('fontes/Oswald-ExtraLight.ttf');
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cor0: #0866ff;
+            --cor1: #ff0033;
+            --cor2: #FF6000;
+            --cor3: #FF1D2C;
+            --cor4: #FF0096;
+            --cor5: #FF00C5;
+            --cor6: #BD00ED;
+        }
+
+        body {
+            font-family: "Oswald";
+            background-color: black;
+        }
+
+        h1,h2 {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        div.main {
+            max-width: 1300px;
+            min-width: 290px;
+            margin: auto;
+        }
+
+        div.d1 {
+            margin: auto;
+            max-width: 1120px;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        div.video {
+            background-color: beige;
+            position: relative;
+            padding-bottom: 50%;
+        }
+
+        .video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        div.imagem {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            font-weight: bolder;
+            min-height: 400px;
+            padding: 20px;
+            
+        }
+
+        footer > p {
+            margin: 50px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .icone {
+            width: 300px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+        }
+
+        .iconfac, .iconins, .iconyou {
+            margin: auto;
+            display: inline-flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            outline: 2px solid white;
+            transition-property: outline-offset, outline-color, background-color;
+            transition-duration: 0.25s;
+        }
+
+        .icon1, .icon2, .icon3 {
+            margin: auto;
+        }
+
+        .iconfac:hover, .iconins:hover, .iconyou:hover {
+            outline-offset: 4px;
+            animation: shake 0.25s;
+        }
+
+        .iconfac:hover {
+            outline-color: var(--cor0);
+            background-color: var(--cor0);
+        }
+
+        .iconins:hover {
+            outline-color: var(--cor2);
+            background-image: linear-gradient(var(--cor2),var(--cor3), var(--cor4), var(--cor5), var(--cor6));
+        }
+
+        .iconyou:hover {
+            outline-color: var(--cor1);
+            background-color: var(--cor1);
+        }
+
+        @keyframes shake {
+            10% {
+                transform: rotate(15deg);
+            }
+            20% {
+                transform: rotate(-15deg);
+            }
+            30% {
+                transform: rotate(15deg)
+            }
+            40% {
+                transform: rotate(-15deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Vídeo, imagens e outros Responsivos</h1>
+    <h2>Vídeos</h2>
+    <div class="main">
+        <div class="d1">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MV3LOE_IBQE?si=s2wmioFux4FrQ8qG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="d1">
+            <div class="imagem">
+                <img src="imagens/league-of-legends.jpg" alt="Skin ashe">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Site criado por Carlos</p>
+
+        <div class="icone">
+            <a href="#" class="iconfac">
+                <div class="icon1">Face</div>
+            </a>
+            <a href="#" class="iconins">
+                <div class="icon2">Inst</div>
+            </a>
+            <a href="#" class="iconyou">
+                <div class="icon3">You</div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

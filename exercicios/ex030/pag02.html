@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            background-color: darkgrey;
+            margin: auto;          
+            max-width: 1000px ;
+            min-width: 190px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        picture {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        iframe {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            min-width: 190px;
+        }
+
+        div.video {
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resposividade</h1>
+    <h2>imagens</h2>
+        <picture>
+            <source media="(max-width: 1050px )" srcset="imagens/ashe-skin-pq.jpg">
+            <img src="imagens/ashe-skin-gd.jpg" alt="Skin ashe">
+        </picture>
+        <hr>
+        <h2>video</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9m0Jdfv_Bog?si=xvNraPJjo_MeiMmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>   
+        
+        <video src="" type="video/mpeg">
+            
+        </video>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a {
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        
+        .v1 {
+            background-color: rgba(165, 42, 42, 0.308);
+        }
+
+        .v1::after {
+            content: '[link]';
+            color: darkgray;
+        }
+        
+        .v1::before {
+            content: '[link]';
+            color: darkgray;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elemento</h1>
+    <h2>Pseudo-elemento em links</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti aliquid minima quae fugiat! Architecto omnis earum nostrum sed maiores sequi esse. Dolorum tempora perferendis reiciendis eos, incidunt minus nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita sit molestiae, eligendi saepe, vitae esse eveniet blanditiis harum voluptas voluptate excepturi ex? Ipsum ipsam ducimus facere sint dolorum expedita!</p>
+    <h3>Videos incriveis</h3>
+
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=yydFq6n2QhI" target="_blank" rel="external" class="v0">Como subir de elo</a></li>
+        <li><a href="https://www.youtube.com/watch?v=1Qs30YrsEKE" target="_blank" rel="external" class="v2">Mater yi quebrado</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Jtkn2MT3KhU" target="_blank" rel="external" class="v1">React mylon broziocre</a></li>
+    </ul>
+
+    
+</body>
+</html>

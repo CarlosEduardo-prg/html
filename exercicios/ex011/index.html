@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Geral</title>
+</head>
+<body>
+    <h1>Teste Geral 3</h1>
+    <h2>Proxima PG</h2>
+    <p>Vamos dar continuidade na proxima pagina. <a href="pag002.html" target="_self" rel="next">Clique aqui.</a></p>
+    <hr>
+    <br>
+    <h2>Imagens dinâmicas</h2>
+    <p>Agora vamos adicionar algumas imagens dinâmicas, que se ajustam conforme o tamanho das telas; tanto como smartphones, tablets e computadores poderão abrir nossos sites.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens Dinãmica">
+    </picture>
+    <hr>
+    <br>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esse video esta hospedado em meu servidor próprio.</p>
+    <video width="500" poster="imagens/zebra500.jpeg" controls >
+        <source src="midias/zebras uhd.mp4.mp4" type="video/mp4">
+        <source src="midias/Zebras Uhd.Mp4.webm" type="video/webm">
+    </video>
+    <h2>Adicionando videos do YouTube</h2>
+    <hr>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=UtcdtNcLkn9yjWB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+</body>
+</html>

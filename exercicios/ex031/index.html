@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro</title>
+    <style>
+        :root {
+            --cor0: #0866ff;
+            --cor1: #ff0033;
+            --cor2: #FF6000;
+            --cor3: #FF1D2C;
+            --cor4: #FF0096;
+            --cor5: #FF00C5;
+            --cor6: #BD00ED;
+        }
+
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .icones {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            column-gap: 25px;
+        }
+
+        .iconins, .iconfac, .iconyou {
+            display: inline-flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            outline: 2px solid #ffffff;
+            transition-property: outline-offset, outline-color, background-color;
+            transition-duration: 0.25s;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        .iconins:hover, .iconfac:hover, .iconyou:hover {
+            outline-offset: 4px;
+            animation: shake 0.25s;
+        }
+
+        .iconi1, .iconi2, .iconi3 {
+            margin: auto;
+            text-decoration: none;
+            color: white;
+        }
+
+        .iconins:hover {
+            outline-color: var(--cor2);
+        }
+        .iconfac:hover {
+            outline-color: var(--cor0);
+        }
+        .iconyou:hover {
+            outline-color: var(--cor1);
+        }
+
+        .iconins:hover {
+            background-image: linear-gradient(var(--cor2), var(--cor3), var(--cor4), var(--cor5), var(--cor6));
+        }
+
+        .iconfac:hover {
+            background-color: #0866ff;
+        }
+
+        .iconyou:hover {
+            background-color: var(--cor1);
+        }
+
+        @keyframes shake {
+            10% {
+                transform: rotate(15deg);
+            }
+            20% {
+                transform: rotate(-15deg);
+            }
+            30% {
+                transform: rotate(15deg);
+            }
+            40% {
+                transform: rotate(-15deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testes aleatórios</h1>
+    <h2>Icones de redes sociais adapitativos</h2>
+
+    <div class="icones">
+        <a href="https://www.instagram.com/educarlos_santos2/" target="_blank" class="iconins">
+            <div class="iconi1">Ins</div>
+        </a>
+
+        <a href="https://www.facebook.com/carlos.santoss.351?locale=pt_BR" target="_blank" class="iconfac">
+            <div class="iconi2">Fac</div>
+        </a>
+
+        <a href="https://www.youtube.com/@CarlosSantos-q2n" target="_blank" class="iconyou">
+            <div class="iconi3">You</div>
+        </a>
+    </div>
+    
+</body>
+</html>

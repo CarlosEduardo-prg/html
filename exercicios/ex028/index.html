@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Responsivo</title>
+    <style>
+        :root {
+            --cor0: #10454F;
+            --cor1: #506266;
+            --cor2: #A3AB78;
+        }
+        
+        body {
+            text-align: center;
+            margin: auto;
+            background-color: var(--cor2);
+        }
+
+        main {
+            background-color:white ;
+           
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1350px;
+            min-width: 290px;
+        }
+
+        main p {
+            text-align: justify;
+        }
+
+        div {
+            background-color: var(--cor0);
+            padding-bottom: 50%;
+            position: relative;
+            margin: 0px -20px;
+        }
+
+        div.video iframe {
+            position: absolute;
+            top: 24%;
+            left: 24%;
+            width: 50%;
+            height: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Criando um Video Responsivo</h1>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum dolor expedita quod, eius, repellat error consequatur harum voluptas ea magni cum nostrum molestiae dolore tempore illo pariatur accusamus sed fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, vel. Similique voluptas tempore in natus soluta? Ipsa odit incidunt magnam cupiditate modi, optio et ex deserunt impedit! Quos, officiis cumque!</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q1OG0qTF5ms?si=LdM_byofldxeC8oX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+</body>
+</html>

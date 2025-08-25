@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro</title>
+    <style>
+        @font-face {
+            font-family: "Oswald" ;
+            src: url('fontes/Oswald-Bold.ttf');
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Oswald";
+        }
+
+        body {
+            background-color: #8c6e30;
+        }
+
+        header {
+            min-height: 400px;
+            background-color: wheat;
+        }
+
+        nav {
+            padding-top: 14px;
+            padding-bottom: 14px;
+            background-color: darkgray;
+            text-align: center;
+        }
+
+        nav > a {
+            display: inline-flex;
+            margin-right: 50px;
+            text-align: center;
+            padding: 8px;
+            color: #8c6e30;
+            font-weight: bolder;
+            font-size: 1.5em;
+            text-decoration: none;
+            outline: 2px solid rgba(105, 105, 105, 0.26);
+            border-radius: 10px;
+            transition-property: outline-offset, outline-color, background-color;
+            transition-duration: 0.25s;
+        }
+
+        .anim:hover {
+            animation: shake 0.25s;
+        }
+
+        nav > a:hover {
+            outline-color: dimgray;
+            outline-offset: 4px;
+            
+        }
+
+        h1, h2 {
+            color: #8c6e30;
+            font-weight: bolder;
+            font-size: 2.5em;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .main1 {
+            background-color: darkgray;
+            margin: auto;
+            display: flex;
+            max-width: 1400px;          
+            min-width: 290px;
+        }
+
+        .main2 {
+            margin: auto;
+            max-width: 1400px;
+            min-width: 290px;
+        }
+
+        .d1, .d2, .d3, .d4 {
+            background-color: darkgray;
+            margin: auto;
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .video {
+            margin: auto;
+            position: relative;
+            padding-bottom: 50%;
+        }
+
+        div > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: dimgray;
+            min-height: 400px;
+        }
+
+        footer > p {
+            padding: 65px;
+        }
+
+        @keyframes shake {
+            10% {
+                transform: rotate(15deg);
+            }
+            20% {
+                transform: rotate(-15deg);
+            }
+            30% {
+                transform: rotate(15deg)
+            }
+            40% {
+                transform: rotate(-15deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="anim">Home</a>
+            <a href="#" class="anim">Quem somos</a>
+            <a href="#" class="anim">Noticías</a>
+            <a href="#" class="anim">Saiba mais</a>
+        </nav>
+        <h1>RESPONSIVÍDADE</h1>
+        <h2>VÍDEOS/IMAGENS</h2>
+
+    </header>
+
+    <div class="main1">
+
+        <div class="d1">
+           <div class="imagem1">
+                <img src="imagens/league-of-legends.jpg" alt="Imagem do league">
+           </div>
+        </div>
+
+        <div class="d2">
+            <div class="imagem2">
+                <img src="imagens/hq720.jpg" alt="Imagem do Faker">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main2">
+
+         <div class="d3">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FTmgBV0uFtg?si=7C6fjAWzE2lkuahA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="d4">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/72omctSeAJQ?si=830SRNnrvoxwZ1mi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Site criado por Carlos Eduardo</p>
+    </footer>
+    
+</body>
+</html>
