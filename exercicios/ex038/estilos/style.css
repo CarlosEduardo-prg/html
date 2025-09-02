@@ -1,0 +1,98 @@
+@charset "UITF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
+
+@font-face {
+    font-family: 'Asimovian' ;
+    src: url('../fontes/Asimovian-Regular.ttf');
+}
+
+:root {
+    --font1: 'Asimovian';
+    --font2: 'TASA Explorer'
+}
+
+* {
+    font-family: var(--font2);
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    background-color: rgb(17, 15, 32);
+}
+
+h1.t1 {
+    text-align: center;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, #657BE6, transparent);
+}
+
+p {
+    max-width: 900px;
+    line-height: 2em;
+    margin: auto;
+}
+
+header {
+    min-height: 300px;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(#A265E6, #7865E6, #657BE6, #657BE6);
+}
+
+main {
+    background-color: rgb(17, 15, 32);
+    color: white;
+    margin: auto;
+    max-width: 1600px;
+}
+
+img {
+    width: 100%;
+}
+
+section.texto1, section.texto2, section.texto3, section.texto4 {
+    padding: 20px;
+    text-align: justify;
+}
+
+section {
+    padding: 50vh 20px 50vh 20px;
+}
+
+.lax1 {
+    background-image: url('../imagens/skin1.jpg');
+    background-size: cover;
+    background-position: 64% 100%;
+    background-attachment: fixed;
+}
+
+.lax2 {
+    background-image: url('../imagens/skin2.jpg');
+    background-size: cover;
+    background-position: 68% 100%;
+    background-attachment: fixed;
+}
+
+section.video {
+    padding: 20px 20px 50% 20px;
+    position: relative;
+}
+
+section.video > iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+    padding: 40px;
+    min-height: 300px;
+    color: white;
+    text-align: center;
+}
