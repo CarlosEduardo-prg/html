@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Teste</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            background-color: darkgray;
+            padding: 10px;
+            font-weight: bold;
+            border: 0.5px solid black;
+        }
+
+        th, tfoot {
+            background-color: darkgray;
+            color: white;
+            font-weight: bolder;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            height: 500px;  
+            position: relative;          
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgray ;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 20px;
+            vertical-align: bottom;
+            
+        }
+
+        .qtd {
+            text-align: right;
+            vertical-align: middle;
+            vertical-align: bottom;
+        }
+
+        caption, th, tfoot {
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <caption>Maiores Torcidas do Brasil</caption>
+        <thead>
+            <tr>
+                <th>Times</th>
+                <th>QTD de torcedores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="qtd">100 349 304</td>
+            </tr>
+            <tr>
+                <td>Corinthians</td>
+                <td class="qtd">120 435 435</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td class="qtd">98 678 874</td>
+            </tr>
+            <tr>
+                <td>Santos</td>
+                <td class="qtd">47 478 498</td>
+            </tr>
+            <tr>
+                <td>Cruzeiro</td>
+                <td class="qtd">57 979 977</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+                <td class="qtd">178 876 876</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+                <td class="qtd">59 098 789</td>
+            </tr>
+            <tr>
+                <td>Fluminense</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Atlhetico Mineiro</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Chapecoense</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Ponte preta</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Guarani</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Mirassol</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Atlhetico Paranaense</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Internacional</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Grêmio</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Botafogo</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Vitoria</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+             <tr>
+                <td>Velo</td>
+                <td class="qtd">10 549 433</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Somatoria de torcedores</td>
+                    <td class="qtd">298 988 899</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis nulla ut, inventore fugiat reprehenderit. Dolor molestiae ipsam laboriosam voluptas ratione fuga, quidem quis aliquam totam! Est enim nam asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum est ad quis iusto maiores a quasi, inventore error, iste beatae accusantium reiciendis sapiente vitae pariatur laudantium repellendus enim itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim libero incidunt eligendi iure obcaecati sit atque sunt quaerat neque eius, ullam officiis quam unde earum inventore quod dolor accusamus sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, dolores excepturi non odio, quidem fugit cumque vero unde debitis temporibus eveniet accusamus? Laborum rem officia aliquid a nostrum accusantium.</p>
+
+    
+</body>
+</html>

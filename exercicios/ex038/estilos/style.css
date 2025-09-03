@@ -36,10 +36,12 @@ p {
 }
 
 header {
-    min-height: 300px;
+    min-height: 600px;
     text-align: center;
     padding-top: 50px;
-    background-image: linear-gradient(#A265E6, #7865E6, #657BE6, #657BE6);
+    background-image: url('../imagens/kaisa.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
 }
 
 main {
@@ -61,7 +63,6 @@ section.texto1, section.texto2, section.texto3, section.texto4 {
 section {
     padding: 50vh 20px 50vh 20px;
 }
-
 .lax1 {
     background-image: url('../imagens/skin1.jpg');
     background-size: cover;
