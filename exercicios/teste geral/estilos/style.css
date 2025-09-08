@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Noto' ;
+    src: url('../fontes/NotoZnamennyMusicalNotation-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Bebas Neue';
+}
+
+header {
+    min-height: 300px;
+    background-color: #0D0D0D ;
+    color: white;
+    position: relative;
+}
+
+header > h1 {
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header > nav {
+    position: absolute;
+    bottom: 0%;
+    font-size: 1.4em;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    margin-right: 40px;    
+}
+
+main {
+    background-color: #D9D2C5;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    background-color: #D9D2C5;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+}
+
+.tex1 {
+    font-size: 1.8em;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tex1 > p {
+    padding: 10px;
+}
+
+main > a {
+    text-decoration: none;
+    color: black;
+}
+
+.im1 {
+    width: 50%;
+    margin: auto;
+    background-image: url('../midia/nike1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 400px;
+    position: relative;
+}
+
+.im1 > p {
+    text-align: center;
+    margin: 5px;
+    width: 50px;
+}
+.im2 {
+    width: 50%;
+    margin: auto;
+    background-image: url('../midia/nike2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 400px;
+}
+
+.im2 > p {
+    text-align: center;
+    margin: 5px;
+    width: 50px;    
+}
+
+video {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #D9D2C5 ;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.container2 {
+    background-color: #D9D2C5;
+    max-width: 1400px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+}
+
+div.container2 > section {
+    padding: 5px;
+}
+
+.tit1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2em;
+}
+
+.vid2 {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.vid2 > iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.tit2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2em;
+}
+
+ul > a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+ul > a:hover {
+    text-decoration: underline;
+}
+
+.lista > ul {
+    color: darkgray;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    list-style-position: inside;
+    list-style: none;
+    columns: 4;
+}
+
+.lista > h1 {
+    font-size: 2em;
+    margin-top: 80px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #0D0D0D ;
+    min-height: 300px;
+}
+
+footer > p {
+    padding-top: 30px;
+}
+
+
