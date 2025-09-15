@@ -32,17 +32,17 @@ header > h1 {
     transform: translate(-50%, -50%);
 }
 
-header > nav {
-    position: absolute;
-    bottom: 0%;
-    font-size: 1.4em;
+.menu {
+    margin: auto;
+    max-width: 381px;
+    
 }
 
-nav > a {
-    text-decoration: none;
+.menu > a {
     color: white;
-    padding-left: 5px;
-    margin-right: 40px;    
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 10px;
 }
 
 main {
@@ -167,6 +167,7 @@ ul > a:hover {
 }
 
 .lista > ul {
+    max-width: 400px;
     color: darkgray;
     margin: auto;
     margin-top: 20px;
@@ -174,7 +175,7 @@ ul > a:hover {
     padding-bottom: 80px;
     list-style-position: inside;
     list-style: none;
-    columns: 4;
+    columns: 2;
 }
 
 .lista > h1 {
