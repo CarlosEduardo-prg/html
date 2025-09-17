@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Conteúdos</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        div.yt, div.mp, div.wz {
+            background-color: gray;
+            margin: 30px auto;
+            position: relative;
+            padding-bottom: 50%;
+        }
+
+        iframe.dyt, iframe.dmp, iframe.dwz {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdos dento de iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum molestiae aperiam at tenetur quam aliquam sed voluptatibus explicabo. Iste nemo vitae omnis expedita recusandae asperiores accusantium assumenda repellat quisquam.</p>
+
+    <div class="main">
+        <h2>Vídeos</h2>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dzhJsc1YszU?si=V-aF5ZG2n1uOwuB3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="dyt"></iframe>
+        </div>
+        <h2>Mapas do Google</h2>
+        <div class="mp">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.0090364786606!2d-47.16685912387708!3d-22.83915517930271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bf306f4d46dd%3A0x6510a6ab61984df4!2sEmbrasatec%20Industria%20e%20Comercio%20de%20Embalagens!5e0!3m2!1spt-BR!2sbr!4v1758131642484!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="dmp"></iframe>
+        </div>
+        <h2>Mapas do waze</h2>
+        <div class="mz">
+            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.569091&lon=-47.178767&ct=livemap" width="600" height="450" allowfullscreen class="dmz"></iframe>
+        </div>
+    </div>
+</body>
+</html>
