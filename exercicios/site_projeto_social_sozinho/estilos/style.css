@@ -1,67 +1,53 @@
 @charset "UTF-8";
 
-
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
-    background-image: url('../imagens/fundo-madeira.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
+    background: url('../imagens/escritorio-fundo.jpg') black center center;
+    background-size: cover;
 }
 
-div.main {
-    display: flex;    
-}
-
-div.iphone {
-    margin: auto;
-    width: 312px;
-    height: 628px;
-    background-image: url('../imagens/frame-iphone.png');
-    background-repeat: no-repeat;
+main {
     position: relative;
+    height: 100vh;
 }
 
-div.tela {
-    background-color: blue;
-    width: 268px;
-    height: 475px;
+section#computador {
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    width: 311px;
+    height: 627px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-div.lista {
-    padding: 15px;
-}
-
-iframe {
+iframe.tela {
+    position: relative;
+    top: 13%;
+    left: 7%;
     width: 268px;
-    height: 475px;
+    height: 471px;
 }
 
-ul {
-    list-style: none;
+a {
+    display: block;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: right;
 }
 
-li {
-    padding-bottom: 15px;
-}
-
-li > img {
-    border-radius: 50%;
-}
-
-img {
+a > img {
     width: 50px;
-    height: 50px;
-}
-
-img:hover {
-    border: 1px solid black;
-    box-shadow: 2px 1px 3px black;
-
+    border-radius: 50%;
+    margin-right: 15px;
 }
