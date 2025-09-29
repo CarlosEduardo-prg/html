@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+</head>
+<body>
+    <h1>Exemplo de Formúlarios</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+
+            <option value="" selected>---Escolha---</option>
+            <optgroup label="Região Sudeste">
+
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+
+            </optgroup>
+
+            <optgroup label="Reigão Nordeste">
+
+                <option value="BA">Bahia</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+                <option value="AL">Alagoas</option>
+                <option value="PA">Paraíba</option>
+                <option value="CE">Ceará</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PI">Píaui</option>
+                <option value="SG">Sergipe</option>
+
+            </optgroup>
+
+            <optgroup label="Região Norte">
+                
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="PR">Pará</option>
+                <option value="RD">Rondônia</option>
+                <option value="RA">Roraima</option>
+                <option value="TO">Tocantins</option>
+
+            </optgroup>
+
+            <optgroup label="Região Centro-oeste">
+
+                <option value="GO">Goiás</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="DF">Distrito Federal</option>
+
+            </optgroup>
+
+            <optgroup label="Região Sul">
+
+                <option value="PN">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                
+            </optgroup>
+
+        </select>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lst">
+            <datalist id="lst">
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Analista</option>
+                <option>Cozinheiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Conte-nos um pouco sobre você</label><br>
+            <textarea name="msg" id="imsg" placeholder="Fale sobre sua ultima experiência"></textarea>
+        </p>
+
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+
+    
+</body>
+</html>
