@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    img#tablet { display: block;}
+    img#phone { display: none;}
+
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    img#pc { display: block;}
+    img#tablet { display: none;}
+    img#phone { display: none;}
+
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    img#tv { display: block;}
+    img#pc { display: none;}
+    img#tablet { display: none;}
+    img#phone { display: none;}
+
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media print {
+    
+    img#print { display: block;}
+    img#tv { display: none;}
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+
+    main {
+        border: 2px solid black;
+        color: black;
+        text-decoration: overline;
+        text-shadow: none;
+    }
+
+    main::after {
+        content: 'Essa impressão foi disponibilizada pelo site www.carlosprg.com';
+    }
+}
