@@ -49,14 +49,8 @@ p {
     text-align: center;
 }
 
-label {
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-}
-
 input.login {
-    width: 179px;
+    width: 230px;
     height: 30px;
     margin-bottom: 5px;
     border-radius: 7px;
@@ -85,8 +79,6 @@ input.botoes:hover {
     background-color: #73672F ;
 }
 
-input#isenha {
-    background-color: #352c029d;
-}
+
 
 
