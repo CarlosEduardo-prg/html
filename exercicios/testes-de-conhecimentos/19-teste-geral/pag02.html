@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            display: block;
+            margin: auto;
+            max-width: 800px;
+        }
+        div.nascimento {
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        div.somando {
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras formas de formlarios</h1>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+        
+                <div class="nascimento">
+                    <h1>Calcule sua data de nascimento</h1>
+                    <p>
+                        <label for="iano">Ano de nascimento</label>
+                        <input type="number" name="ano" id="iano" min="1800" max="2025" oninput="calcidade()">
+                    </p>
+                    <p>
+                        <label for="iidade">Sua idade é:</label>
+                        <output id="iidade">0</output>
+                    </p>
+                </div>
+                <div class="somando">
+                    <h1>Faça seus calculos</h1>
+                    <p>
+                        <label for="isoma1">Numero1</label>
+                        <input type="number" name="soma1" id="isoma1" min="0" max="1000" oninput="isoma.innerHTML = Number(isoma1.value) + Number(isoma2.value)">
+                    </p>
+                    <p>
+                        <label for="isoma2">Numero2</label>
+                        <input type="number" name="soma2" id="isoma2" min="0" max="1000" oninput="isoma.innerHTML = Number(isoma1.value) + Number(isoma2.value)">
+                    </p>
+                    <p>
+                        <label for="isoma">Total é:</label>
+                        <output id="isoma">0</output>
+                    </p>
+                </div>
+
+                <div class="profissões">
+                    <h1>Escolha ou digite sua profissão</h1>
+                    <p>
+                        <label for="iprof">Digite sua profissão</label>
+                        <input type="text" name="prof" id="iprof" list="list">
+                        <datalist id="list">
+                            <option value="Emb">Analista Logistico</option>
+                            <option value="Emb">Analista qualidade</option>
+                            <option value="Emb">Analista PCP</option>
+                            <option value="Emb">Diretor industrial</option>
+                            <option value="Emb">Genrente Geral</option>
+                        </datalist>
+                    </p>       
+                </div>
+        </form>
+    </main>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
