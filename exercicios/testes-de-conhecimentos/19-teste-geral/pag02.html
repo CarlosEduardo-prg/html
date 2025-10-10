@@ -6,6 +6,10 @@
     <title>Formulários</title>
     <style>
 
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
         h1 {
             text-align: center;
         }
@@ -21,16 +25,35 @@
             padding: 20px;
         }
 
-        div.somando {
+        div.somando, div.profissoes {
             text-align: center;
             border: 1px solid black;
             margin-top: 10px;
             padding: 20px;
         }
+
+        a#botao {
+            color: black;
+            width: 400px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding-top: 15px;
+            display: block;
+            text-align: center;
+            text-decoration: none; 
+        }
+
+        a#botao:hover {
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
-    <h1>Outras formas de formlarios</h1>
+    <h1>OUTRAS FORMAS DE FORMULÁRIOS</h1>
     <main>
         <form action="cadastro.php" method="post" autocomplete="on">
         
@@ -61,21 +84,22 @@
                     </p>
                 </div>
 
-                <div class="profissões">
+                <div class="profissoes">
                     <h1>Escolha ou digite sua profissão</h1>
                     <p>
                         <label for="iprof">Digite sua profissão</label>
                         <input type="text" name="prof" id="iprof" list="list">
                         <datalist id="list">
-                            <option value="Emb">Analista Logistico</option>
-                            <option value="Emb">Analista qualidade</option>
-                            <option value="Emb">Analista PCP</option>
-                            <option value="Emb">Diretor industrial</option>
-                            <option value="Emb">Genrente Geral</option>
+                            <option value=" ">Analista Logistico</option>
+                            <option value=" ">Analista qualidade</option>
+                            <option value=" ">Analista PCP</option>
+                            <option value=" ">Diretor industrial</option>
+                            <option value=" ">Genrente Geral</option>
                         </datalist>
                     </p>       
                 </div>
         </form>
+        <a href="pag03.html" target="_blank" rel="next" id="botao">Entre Aqui</a>
     </main>
 
     <script>
