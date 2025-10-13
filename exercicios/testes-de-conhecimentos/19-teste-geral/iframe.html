@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagína Iframe</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+            background: url('imagens/fundo.jpg') no-repeat bottom center;
+            background-size: cover;
+            position: relative;
+        }
+
+        div#container {
+            background-color: blue;
+            width: 400px;
+            height: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, heigth 0.3s;
+            transition-timing-function: ease;
+        }
+
+        div#container > iframe {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+
+        div#show {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        div#show > a {
+            margin-left: 10px;
+        }
+
+        div#show img:hover {
+            transform: translate(-5%, -5%);
+            transition: transform 0.2s;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid darkgray;
+            border-radius: 50%;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            div#container {
+                width: 700px;
+                height: 600px;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            div#container {
+                width: 950px;
+                height: 700px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="show">
+        <h1>Escolha seu show</h1>
+        <a href="pag04.html" target="guita" class="gt1"><img src="imagens/pexels-geriart-13847666.jpg" alt=""></a>
+        <a href="pag05.html" target="guita" class="gt2"><img src="imagens/pexels-guborges-2646825.jpg" alt=""></a>
+        <a href="#" class="gt3"><img src="imagens/pexels-meline-waxx-44315-165971.jpg" alt=""></a>
+    </div>
+    <div id="container">
+        <iframe src="pag04.html" name="guita" frameborder="0"></iframe>
+    </div>
     
 </body>
 </html>
