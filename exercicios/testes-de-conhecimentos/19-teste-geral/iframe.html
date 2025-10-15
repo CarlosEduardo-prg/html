@@ -17,17 +17,17 @@
             height: 100vh;
             background: url('imagens/fundo.jpg') no-repeat bottom center;
             background-size: cover;
-            position: relative;
         }
 
         div#container {
             background-color: blue;
+            display: block;
             width: 400px;
             height: 600px;
             border-radius: 10px;
             overflow: hidden;
             position: absolute;
-            top: 50%;
+            top: 53%;
             left: 50%;
             transform: translate(-50%, -50%);
             transition: width 0.3s, heigth 0.3s;
@@ -35,7 +35,8 @@
         }
 
         div#container > iframe {
-            position: relative;
+            display: block;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -44,9 +45,11 @@
         }
 
         div#show {
+            display: block;
             text-align: center;
             color: white;
-            padding: 20px;
+            padding: 10px;
+
         }
 
         div#show > a {
@@ -67,29 +70,29 @@
 
         @media screen and (min-width: 768px) and (max-width: 992px) {
             div#container {
+                display: block;
                 width: 700px;
-                height: 600px;
+                height: 800px;
             }
         }
 
         @media screen and (min-width: 992px) {
             div#container {
                 width: 950px;
-                height: 700px;
+                height: 800px;
             }
         }
     </style>
 </head>
 <body>
-    <div id="show">
-        <h1>Escolha seu show</h1>
-        <a href="pag04.html" target="guita" class="gt1"><img src="imagens/pexels-geriart-13847666.jpg" alt=""></a>
-        <a href="pag05.html" target="guita" class="gt2"><img src="imagens/pexels-guborges-2646825.jpg" alt=""></a>
-        <a href="#" class="gt3"><img src="imagens/pexels-meline-waxx-44315-165971.jpg" alt=""></a>
-    </div>
-    <div id="container">
-        <iframe src="pag04.html" name="guita" frameborder="0"></iframe>
-    </div>
-    
+        <div id="show">
+            <h1>Escolha seu show</h1>
+            <a href="pag04.html" target="guita" class="gt1"><img src="imagens/pexels-geriart-13847666.jpg" alt=""></a>
+            <a href="pag05.html" target="guita" class="gt2"><img src="imagens/pexels-guborges-2646825.jpg" alt=""></a>
+            <a href="pag06.html" target="guita" class="gt3"><img src="imagens/pexels-meline-waxx-44315-165971.jpg" alt=""></a>
+        </div>
+        <div id="container">
+            <iframe src="pag04.html" name="guita" frameborder="0"></iframe>
+        </div>    
 </body>
 </html>
