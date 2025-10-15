@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: darkgray;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        span#burguer {
+            background-color: gray;
+            color: white;
+            display: block;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        span#burguer:hover {
+            background-color: black;
+            color: white;
+        }
+
+        menu {
+            display: none;
+        }
+
+        menu#itens a {
+            text-decoration: none;
+        }
+
+        menu#itens li {
+            background-color: gray;
+            color: white;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 5px;
+        }
+
+        menu#itens li:hover {
+            background-color: black;
+            color:white;
+        }
+
+        section {
+            width: 450px;
+            margin: auto;
+        }
+
+        p {
+            padding: 10px;
+            text-align: justify;
+        }
+
+        @media screen and (min-width:768px) and (max-width: 992px) {
+            section {
+                width: 600px;
+            }
+
+            span#burguer {
+                display: none;
+            }
+
+            menu {
+                display: block !important;
+            }
+
+            menu#itens li {
+                display: inline-block;
+                border-radius: 5px;
+                padding: 8px;
+            }
+
+        }
+
+        @media screen and (min-width: 992px) {
+
+            section {
+                width: 600px;
+            }
+
+            menu {
+                display: block !important;
+            }
+
+            span#burguer {
+                display: none;
+            }
+
+            menu#itens li {
+                display: inline-block;
+                border-radius: 5px;
+                padding: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu Hamburguer</h1>
+        <span id="burguer" onclick="clickMenu()" class="material-symbols-outlined">menu</span>
+        <menu id="itens">
+            <ul>
+                <a href=""><li>Noticias</li></a>
+                <a href=""><li>Esportes</li></a>
+                <a href=""><li>Politica</li></a>
+                <a href=""><li>Inscrever</li></a>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet sunt inventore, eligendi quis unde. Laboriosam eos sint adipisci hic maxime consectetur, delectus consequatur, amet, vel eius voluptate neque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus, enim, commodi deleniti natus officiis possimus aspernatur amet minima nostrum inventore perspiciatis assumenda ab? Illum ad consequuntur porro praesentium natus.</p>
+        </section>
+    </main>
+    <script>
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
