@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div.container {
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+div.titulo {
+    text-align: center;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+div.container > nav {
+    flex-flow: column nowrap;
+    align-self: auto;
+}
