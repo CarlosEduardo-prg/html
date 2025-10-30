@@ -27,16 +27,16 @@ section.container1, section.container2 {
 }
 
 aside.as1, aside.as3 {
-    height: 300px;
+    height: 380px;
     border: 1px dotted black; 
     flex: 3 5 300px;
     align-self: flex-start;
 }
 
 aside.as2, aside.as4 {
-    height: 300px;
+    height: 380px;
     border: 1px dotted black;
-    flex: 1 1 300px;
+    flex: 1 1 500px;
 }
 
 img {
