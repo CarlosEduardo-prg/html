@@ -15,6 +15,11 @@ body {
     position: relative;
 }
 
+div.login > h1 {
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+}
+
 div.login {
     background-color: white;
     display: flex;
@@ -37,5 +42,66 @@ div.imagem img {
 
 div.imagem {
     background-color: antiquewhite;
-    height: 50%;
+    height: 55%;
+}
+
+div.form {
+   padding: 10px; 
+}
+
+span {
+    padding: 7px;
+}
+
+div.user, div.key {
+    background-color: #A68965;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+}
+
+div.user > input, div.key > input {
+    background-color: #D9BFA9;
+    margin: auto;
+    width: 83%;
+    height: 30px;
+}
+
+div.key {
+    background-color: #A68965;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px auto;
+    width: 90%;
+    height: 40px;
+}
+
+div.botao {
+    background-color: blue;
+    text-align: center;
+}
+
+form > input[type=submit]{
+    background-color: #d9bfa981;
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 35px;
+    cursor: pointer;
+}
+
+form > input[type=button] {
+    background-color: #d9bfa981;
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 35px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover, form > input[type=button]:hover {
+    background-color: #594736;
+    color: white;
 }

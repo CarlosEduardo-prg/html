@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Geral</title>
-    <link rel="stylesheet" href="estilos/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/index.css">
 </head>
 <body>
@@ -15,19 +15,23 @@
         
         <h1>Login</h1>
         <div class="form">
-            <p>
-                <label for="iemail">Email
+            <form action="cadas.php" method="post" autocomplete="on">
+                <div class="user">
+                    <label for="iemail">
+                        <span class="material-symbols-outlined">key</span>
+                    </label>
                     <input type="email" name="email" id="iemail">
-                </label>
-            </p>
-
-            <p>
-                 <label for="isenha">Senha
+                </div>
+                <div class="key">
+                    <label for="isenha">
+                        <span class="material-symbols-outlined">Person</span>
+                    </label>
                     <input type="password" name="senha" id="isenha">
-                </label>
-            </p>
+                </div>
+                <input type="submit" value="Entrar">
+                <input type="button" value="Esqueci minha senha">
+            </form>
         </div>
-
     </div>
     
 </body>
