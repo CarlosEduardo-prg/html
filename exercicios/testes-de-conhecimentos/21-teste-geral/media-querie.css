@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div.login {
+    width: 800px;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+}
+
+div.imagem {
+    height: 100%;
+}
+
+div.form {
+    width: 52%;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+}

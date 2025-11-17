@@ -6,6 +6,8 @@
     <title>Teste Geral</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="mediaa-querie.css" media="screen and (min-width: 728px) and (max-width: 968px)">
+    <link rel="stylesheet" href="media-querie.css" media="screen and (min-width: 968px)">
 </head>
 <body>
     <div class="login">
@@ -13,20 +15,21 @@
             <img src="imagens/trigo.jpg" alt="Paisagem agro">
         </div>
         
-        <h1>Login</h1>
+        
         <div class="form">
+            <h1>Login</h1>
             <form action="cadas.php" method="post" autocomplete="on">
                 <div class="user">
                     <label for="iemail">
                         <span class="material-symbols-outlined">key</span>
                     </label>
-                    <input type="email" name="email" id="iemail">
+                    <input type="email" name="email" id="iemail" required placeholder="  Ex@gmail.com">
                 </div>
                 <div class="key">
                     <label for="isenha">
                         <span class="material-symbols-outlined">Person</span>
                     </label>
-                    <input type="password" name="senha" id="isenha">
+                    <input type="password" name="senha" id="isenha" required placeholder="  Ex:12345@">
                 </div>
                 <input type="submit" value="Entrar">
                 <input type="button" value="Esqueci minha senha">
