@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Geral</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/inicial.css">
+    <link rel="stylesheet" href="estilos/media.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <h1>Meu site</h1>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <h1>Meu site</h1>
+        <nav id="itens" class="menu">
+            <h2>Meu site</h2>
             <a href="#">
                 <p>QUEM SOMOS</p>
             </a>
@@ -49,5 +53,16 @@
         </section>
     </main>
     
+    <script>
+        function clickMenu()
+        {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

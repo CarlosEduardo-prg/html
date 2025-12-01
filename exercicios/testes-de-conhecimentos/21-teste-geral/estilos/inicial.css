@@ -18,6 +18,18 @@ header {
     top: -1px;
 }
 
+header > h1 {
+    display: none;
+}
+
+header span.material-symbols-outlined {
+    display: none;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 nav.menu {
     font-size: .9em;
     padding: 10px;
@@ -53,13 +65,10 @@ a:hover {
     border-radius: 10px;
 }
 
-div.prim {
-    display: flex;
-}
-
 form > input[type=submit], form > input[type=search] {
     border-radius: 20px;
     width: 150px;
     padding: 5px;
+    cursor: pointer;
 }
 
