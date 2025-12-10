@@ -72,3 +72,33 @@ form > input[type=submit], form > input[type=search] {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+}
+
+section.sec01 {
+    border: 2px dotted green;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+section.sec02 {
+    border: 2px dotted black;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.artic01, article.artic02 {
+    border: 2px dotted red;
+    flex: 3 0 300px;
+}
+
+article.carlar, article.carbra {
+    border: 2px dotted blue;
+    flex: 2 0 300px;
+}
+
