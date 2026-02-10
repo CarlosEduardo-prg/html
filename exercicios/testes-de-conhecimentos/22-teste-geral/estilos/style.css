@@ -8,95 +8,60 @@
 }
 
 :root {
-    --destaque: #64766a;
+    --destaque: ;
+    --fonte2: #ffffff;
     --fonte: #000000;
-    --fundo: #f4f2f3 ;
-    --fundo2: #c0a9bd ;
-    --semi-destaque: #94a7ae;
+    --fundo: #3B4346 ;
+    --fundo2:  ;
+    --semi-destaque: #B67011;
+}
+
+header {
+    background-image: url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+
+div.titulo {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fonte2);
+    font-weight: bolder;
+    text-shadow: 3px 3px black;
+    height: 200px;
 }
 
 menu {
-    background-color: var(--semi-destaque) ;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+    background-color: var(--fundo);
+    height: 40px;
 }
 
-menu ul.chaves {
+menu  ul {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
 }
+
 menu li {
     list-style: none;
 }
 
 menu a {
+    color: var(--fonte2) ;
     text-decoration: none;
-    color: var(--fonte);
 }
 
-menu nav {
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    padding: 6px;
-    gap: 5px;
-    transition: 0.5s;
+div.barra {
+    height: 5px;
+    margin-top: 5px;
 }
 
-menu nav:hover {
-    background-color: #556064;
-    color: var(--fundo);
-}
-
-div.barra-pesquisa {
-    display: none;
-}
-
-form {
-    display: flex;
-    align-items: center;
-}
-
-form input  {
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-main {
-    display: grid;
-    grid-template-columns: auto 90% auto;
-    gap: 20px;
-}
-
-section.fixo, section.novidades {
-    grid-column: 2;
-}
-
-
-section.fixo img {
-    display: block;
-    margin: auto;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 90%;
-    height: 350px;
-}
-
-section.novidades img {
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: 350px;
-}
-
-@media screen and (min-width: 768px) {
-    main {
-        grid-template-columns: auto 300px 1fr auto;
-    }
-
-    section.novidades {
-        grid-column: 3 / 4;
-    }
+div.barra:hover {
+    background-color: var(--semi-destaque);
 }
