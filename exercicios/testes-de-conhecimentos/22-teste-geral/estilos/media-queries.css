@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px ) {
+
+    header {
+        background-image: url('../images/pexels-oskar-gross-1074333632-34328614.jpg');
+        height: 450px;
+    }
+
+    section.container {
+        flex-flow: row nowrap;
+    }
+
+    section.bloco1 {
+        flex: 40% 0 0;
+    }
+
+    section.bloco2 {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        flex: 40% 0 0;
+    }
+
+}
