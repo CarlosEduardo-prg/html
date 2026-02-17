@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 868px ) {
 
     header {
         background-image: url('../images/pexels-oskar-gross-1074333632-34328614.jpg');
@@ -22,4 +22,19 @@
         flex: 40% 0 0;
     }
 
+    section.conteudo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.leg1, .leg2, .leg3, .leg4, .leg5, .leg6 {
+        flex: 300px 1 0;
+    }
+
+    div.fot1, .fot2, .fot3, .fot4, .fot5, .fot6 {
+        flex: 200px 1 0;
+    }
+
+    div > img {
+        width: 100%;
+    }
 }
