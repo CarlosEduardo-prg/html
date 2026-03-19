@@ -75,6 +75,10 @@ div.botao1, div.botao2 {
     cursor: pointer;
 }
 
+div.botao1:hover, div.botao2:hover {
+    background-color: rgb(75, 165, 238);
+}
+
 aside.video {
     display: flex;
     justify-content: center;
